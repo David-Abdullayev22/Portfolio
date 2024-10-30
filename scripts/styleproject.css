@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #5d5d5d;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2C2C2C;
+    color: #cbcbcb;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 4px solid #68A87B;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.nav-button {
+    background-color: #6E6E6E;
+    color: white;
+    border: none;
+    padding: 20px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #5a5a5a;
+}
+
+.main-layout {
+    display: flex; /* Flexbox для размещения aside и контента */
+    flex-grow: 1;
+}
+
+aside {
+    background-color: #2C2C2C;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+    padding: 0; /* Убираем отступы */
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Чтобы текст и кнопка растягивались */
+    width: 100%; /* Растягивает элемент на всю ширину родителя */
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #383838;
+    gap: 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.content-image {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.game-content {
+    flex-grow: 1;
+    position: relative;
+}
+
+.game-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.game-content p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #cbcbcb;
+}
+
+.game-content h4{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    margin: 10px;
+}
+
+.read-more-btn {
+    background-color: #9e9e9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+
+.filters {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #95efb0;
+}
+.filters h3 {
+    margin-bottom: 10px;
+}
+.filters label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.no-results {
+    display: none;
+    color: red;
+}
+
+
+.blur-space{
+    display: flex;
+    justify-content: flex-end; /* Выровнять кнопки по правому краю */
+    gap: 15px; /* Расстояние между кнопками */
+    position: absolute; /* Зафиксировать navbar */
+    top: 20px; /* Отступ от верха */
+    right: 30px; /* Отступ от правого края */
+}
+.blur-overlay {
+    position: fixed;       /* Закрепляем на экране */
+    top: 0;
+    left: 0;
+    width: 100vw;          /* Покрывает всю ширину экрана */
+    height: 100vh;         /* Покрывает всю высоту экрана */
+    background: rgba(61, 61, 61, 0.5); /* Полупрозрачный белый фон */
+    backdrop-filter: blur(10px); /* Размытие фона */
+    z-index: 9999;         /* Выше всех элементов */
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.blur-overlay.active {
+    position: fixed;       /* Закрепляем на экране */
+    top: 0;
+    left: 0;
+    width: 100vw;          /* Покрывает всю ширину экрана */
+    height: 100vh;         /* Покрывает всю высоту экрана */
+    background: rgba(61, 61, 61, 0.5); /* Полупрозрачный белый фон */
+    backdrop-filter: blur(10px); /* Размытие фона */
+    z-index: 9999;         /* Выше всех элементов */
+    opacity: 1;
+    visibility: visible;
+}
+
+.blur-without-button{
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    height: 100vh; /* Полная высота экрана для примера */
+    flex-direction: column;
+}
+
+.title-project{
+    font-size: 150px;
+}
+
+.info-project{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.about-project{
+    font-size: 25px;
+    color: #bababa;
+    margin-top: 50px;
+}
+
+.image-project{
+    width: 765px;
+    height: auto;
+
+}
+
+
+
+.button-project{
+    background-color: #6E6E6E; /* Серый фон */
+    color: rgb(255, 255, 255); /* Белый текст */
+    border: none; /* Убираем рамку */
+    padding: 20px 25px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer; /* Курсор указателя */
+    font-weight: bold; /* Жирный текст */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+
+.full-slider{
+    padding: 40px;
+}
+.bx-wrapper {
+    width: 775px;
+
+}
+.slider-nav > div {
+    float: left;
+    border: 3px solid #ffffff;
+}
+.slider-nav > div a {
+    display: block;
+    cursor: pointer;
+}
+.slider-nav > div a.active {
+    border-bottom: 2px solid #000;
+}
+.slider-image-mini{
+    width: 150px;
+    object-fit: cover;
+
+}
+.title-blur{
+    font-size: 150px;
+    position: absolute;
+    top: 0; /* Поднимает текст к верхнему краю контейнера */
+    margin-left: 1200px;
+}
+
+
+
+

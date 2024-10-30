@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: auto; /* Позволяет странице расти по мере добавления контента */
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+
+.davdiwhite{
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Отступ от верха */
+    left: 0; /* Отступ от левого края */
+}
+
+.davdiblack{
+    width: 500px;
+    height: 500px;
+    margin-right: 2200px; /* Отступ между изображением и текстом */
+    margin-top: -10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Выровнять кнопки по правому краю */
+    gap: 15px; /* Расстояние между кнопками */
+    position: absolute; /* Зафиксировать navbar */
+    top: 20px; /* Отступ от верха */
+    right: 30px; /* Отступ от правого края */
+}
+
+.nav-button {
+    background-color: #6E6E6E; /* Серый фон */
+    color: rgb(255, 255, 255); /* Белый текст */
+    border: none; /* Убираем рамку */
+    padding: 20px 25px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    border-radius: 10px; /* Закругленные углы */
+    cursor: pointer; /* Курсор указателя */
+    font-weight: bold; /* Жирный текст */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+
+.nav-button:hover {
+    background-color: #5a5a5a; /* Темно-серый фон при наведении */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Минимальная высота экрана */
+    background-color: #000000;
+    background-image: linear-gradient(33deg, #000000 75%, #85ffbd 99%);
+    background-size: cover;
+    text-align: center;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    align-items: center;
+    min-height: 40vh;
+    background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    text-align: center;
+}
+
+.aboutme-container p {
+    font-size: 60px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -800px;
+    margin-top: -450px;
+}
+
+.aboutme-container h4 {
+    font-size: 25px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -900px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+
+.language-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    align-items: center;
+    min-height: 45vh;
+    background-image: radial-gradient(at 60.13172562094644% 5.014256493077651%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 68.86528259969462% 91.3947072197759%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 43.63135472064783% 59.16180570062251%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 18.74884461277666% 65.50570238557081%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 84.67057823131172% 96.04218225014316%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 62.98785235236595% 51.052502492917775%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 1.5820989318821255% 49.09080444724621%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 53.325399244324466% 37.96599004958714%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 7.410383816961175% 77.64783456634477%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 98.69692870162426% 95.25321864493554%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 38.381155159044546% 39.72767542092805%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%);
+    text-align: center;
+}
+
+.language-container p {
+    font-size: 60px; 
+    color: #ffffff; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
+
+
+}
+
+.language-container h4 {
+    font-size: 25px; /* Размер текста */
+    color: #fdfdfd; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -900px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+
+
+.kodland-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    align-items: center;
+    min-height: 40vh;
+    background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    text-align: center;
+}
+
+.kodland-container p {
+    font-size: 60px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+}
+
+.kodland-container h4 {
+    font-size: 25px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -900px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+
+.pl-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    align-items: center;
+    min-height: 40vh;
+    background-image: radial-gradient(at 60.13172562094644% 5.014256493077651%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 68.86528259969462% 91.3947072197759%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 43.63135472064783% 59.16180570062251%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 18.74884461277666% 65.50570238557081%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 84.67057823131172% 96.04218225014316%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 62.98785235236595% 51.052502492917775%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 1.5820989318821255% 49.09080444724621%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 53.325399244324466% 37.96599004958714%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 7.410383816961175% 77.64783456634477%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 98.69692870162426% 95.25321864493554%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 38.381155159044546% 39.72767542092805%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%);
+    text-align: center;
+    
+}
+
+.pl-container p {
+    font-size: 60px; /* Размер текста */
+    color: #ffffff; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+}
+
+.pl-container h3 {
+    font-size: 35px; /* Размер текста */
+    color: #ffffff; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -900px;
+    max-width: 400px;
+    white-space: nowrap; /* Отключаем перенос текста */
+}
+
+.pl-container h4 {
+    font-size: 35px; /* Размер текста */
+    color: #ffffff; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: 900px;
+    max-width: 800px;
+    margin-top: -65px;
+    white-space: nowrap; /* Отключаем перенос текста */
+}
+
+
+
+.program-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    align-items: center;
+    min-height: 40vh;
+    background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
+    text-align: center;
+}
+.program-container p {
+    font-size: 60px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+}
+
+.program-container h3 {
+    font-size: 35px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: -900px;
+    max-width: 400px;
+    white-space: nowrap; /* Отключаем перенос текста */
+}
+
+.program-container h4 {
+    font-size: 35px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-weight: bold; /* Жирность текста */
+    margin-left: 900px;
+    max-width: 800px;
+    margin-top: -65px;
+    white-space: nowrap; /* Отключаем перенос текста */
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #f1f1f1;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content .socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-content .socials li a {
+    color: #bbb;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .socials li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.main-heading {
+    font-size: 300px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 10%; /* Задаём расстояние сверху для первого текста */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-heading {
+    font-size: 200px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 60%; /* Задаём расстояние сверху для второго текста */
+    left: 20%;
+    transform: translateX(-50%);
+    width: 300px; /* Фиксированная ширина */
+    white-space: nowrap; /* Отключаем перенос текста */
+    text-align: center; /* Центрируем текст внутри блока */
+    letter-spacing: 5px; /* Расстояние между буквами */
+}
+
+.animated-text {
+    font-size: 200px;
+    font-weight: bold;
+    color: #3498db;
+    opacity: 1;
+    transition: opacity 1s ease, color 1s ease;
+    text-align: center;
+    width: 300px; /* Фиксированная ширина */
+    margin: 0 auto; /* Центрирование блока */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link href="../scripts/styleproject.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+<body>
+    <header>
+        <h1>My projects</h1>
+        <div class="navbar">
+            <a href="index.html">
+                <button class="nav-button">About me</button>
+            </a>
+
+            <a href="skills.html">
+                <button class="nav-button">My skills</button>
+            </a>
+        </div>
+    </header>
+    <main class="main-layout">
+        <aside class="menu">
+            <div class="filters">
+                <h3>Фильтры</h3>
+                
+                <!-- Игры -->
+                <div>
+                    <h4>Игры</h4>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="mobile"> Mobile</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="webgame"> WebGames</label>
+                    <!-- <label><input type="checkbox" class="filter" data-filter="game" value="dekstop"> Dekstop</label> -->
+                    <label><input type="checkbox" class="filter" data-filter="game" value="3d"> 3D</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="2d"> 2D</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="ar"> AR</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="arcade"> Arcade</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="runner"> Runner</label>
+                    <!--<label><input type="checkbox" class="filter" data-filter="game" value="survival"> Survival</label> -->
+                    <!--<label><input type="checkbox" class="filter" data-filter="game" value="tests"> Tests</label> -->
+                    <label><input type="checkbox" class="filter" data-filter="game" value="shooter"> Shooter</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="sandbox"> Sandbox</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="3inarow"> 3 in a row</label>
+                    <label><input type="checkbox" class="filter" data-filter="game" value="rofls"> Rofls game</label>
+
+                </div>
+
+                <!-- Сайты -->
+                <div>
+                    <h4>Сайты</h4>
+                    <label><input type="checkbox" class="filter" data-filter="websites" value="site"> Сайт</label>
+                </div>
+
+                <!-- Нейросети -->
+                <div>
+                    <h4>Нейросети</h4>
+                    <label><input type="checkbox" class="filter" data-filter="ai" value="text"> Текстовые нейросети</label>
+                </div>
+
+                <!-- Чат-боты -->
+                <div>
+                    <h4>Чат-боты</h4>
+                    <label><input type="checkbox" class="filter" data-filter="chatbots" value="discord"> Discord</label>
+                    <label><input type="checkbox" class="filter" data-filter="chatbots" value="telegram"> Telegram</label>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content">
+            <div class="item-content" data-websites="site">
+                <img alt="Davdi" src="../images/skylinenewslogo.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Skyline News</h2>
+                    <p>My first website with a complex structure and mechanics</p>
+                    <button id="showButtonSN" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#website</h4>
+                </div>
+            </div>
+            <div class="item-content" data-websites="site">
+                <img alt="Davdi" src="../images/Portfoliologo.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Portfolio</h2>
+                    <p>A site I worked really hard on XD</p>
+                    <button id="showButtonP" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#website</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="mobile 3d runner webgame">
+                <img alt="Davdi" src="../images/cityrunner.jpg" class="content-image" />
+                <div class="game-content">
+                    <h2>City Runner</h2>
+                    <p>My first Unity game</p>
+                    <button id="showButton" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#mobile #3d #game #runner #webgame</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 3d sandbox">
+                <img alt="Davdi" src="../images/bue.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Build and Explore</h2>
+                    <p>My most popular game</p>
+                    <button id="showButtonBaE" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #3d #game #sandbox</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d arcade">
+                <img alt="Davdi" src="../images/knife_challenge.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Knife Challenge</h2>
+                    <p>One of my fastest growing games</p>
+                    <button id="showButtonKC" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #arcade</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d arcade">
+                <img alt="Davdi" src="../images/cutfruit.jpg" class="content-image" />
+                <div class="game-content">
+                    <h2>Cut Fruit</h2>
+                    <p>A game I experimented with a lot</p>
+                    <button id="showButtonCF" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #arcade</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d runner">
+                <img alt="Davdi" src="../images/robo-runner.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Gear Dash</h2>
+                    <p>One of my first games, which I made using video tutorials from YouTube)</p>
+                    <button id="showButtonGD" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #runner</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d arcade">
+                <img alt="Davdi" src="../images/skipit.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Skipit</h2>
+                    <p>A game whose idea I came up with entirely myself</p>
+                    <button id="showButtonSI" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #arcade</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d 3inarow">
+                <img alt="Davdi" src="../images/crystalmagic.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Crystal Magic</h2>
+                    <p>Good match 3 game</p>
+                    <button id="showButtonCM" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #3_in_a_row</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="webgame 2d shooter">
+                <img alt="Davdi" src="../images/exsider.png" class="content-image" />
+                <div class="game-content">
+                    <h2>Exsider</h2>
+                    <p>My worst game XD</p>
+                    <button id="showButtonEX" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#webgame #2d #game #shooter</h4>
+                </div>
+            </div>
+            <div class="item-content" data-game="mobile ar rofls">
+                <img alt="Davdi" src="../images/kolobokAR.png" class="content-image" />
+                <div class="game-content">
+                    <h2>KolobokAR</h2>
+                    <p>My first AR app</p>
+                    <button id="showButtonKA" class="read-more-btn">Узнать Подробнее</button>
+                    <h4>#mobile #AR #game #rofls</h4>
+                </div>
+            </div>
+            <div class="no-results">There are no such projects :(</div>
+        </div>
+
+
+        <!-- City Runner -->
+
+        <div id="content" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButton" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">City Runner</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/cityrunner0.jpg"></div>
+                        <div><img class="image-project" src="../images/cityrunner1.jpg"></div>
+                        <div><img class="image-project" src="../images/cityrunner2.jpg"></div>
+                        <div><img class="image-project" src="../images/cityrunner3.jpg"></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/cityrunner0.jpg"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/cityrunner1.jpg"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/cityrunner2.jpg"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="3"><img class="slider-image-mini" src="../images/cityrunner3.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Runner</li>
+                    <li class="info-project">Release date: 05/31/22</li>
+                    <li class="info-project">Restart date: 17/06/24</li>
+                    <li class="info-project">Visits: 12.300+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/339526?utm_campaign=rus_games_brand_yandex_desk_search_exp_all-in-one_460_03.05%7C110685041&utm_medium=search&utm_source=yandex&utm_term=яндекс%20игры&utm_content=k50id%7C0100000051576026537_51576026537%7Ccid%7C110685041%7Cgid%7C5446358361%7Caid%7C16138294055%7Cadp%7Cno%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cmain#app-id=339526&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730038159340-ba92&rtx-reqid=14274565211603330239&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A669972443%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%2214274565211603330239%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252F%253Fk50id%253D0100000051576026537_51576026537%2526yclid%253D7776315139291611135%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                    <li class="info-project">Google Play: <a href="https://play.google.com/store/apps/details?id=com.Davdi.CityRunner" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">City Runner is a fun and dynamic runner game where your main goal is to run as far as possible, overcoming various obstacles along the way. The game requires you to react quickly, dexterity and attentiveness.</p>
+            </div>    
+        </div>
+
+
+
+
+
+        <!-- Build and Explore -->
+
+        <div id="contentBaE" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonBaE" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Build and Explore</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/bue.png"></div>
+                        <div><img class="image-project" src="../images/bae1.png"></div>
+                        <div><img class="image-project" src="../images/bae2.png"></div>
+                        <div><img class="image-project" src="../images/bae3.png"></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/bue.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/bae1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/bae2.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="3"><img class="slider-image-mini" src="../images/bae3.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Sandbox</li>
+                    <li class="info-project">Release date: 01/08/22</li>
+                    <li class="info-project">Visits: 41.000+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/178679?utm_campaign=rus_games_brand_yandex_desk_search_exp_all-in-one_460_03.05%7C110685041&utm_medium=search&utm_source=yandex&utm_term=яндекс%20игры&utm_content=k50id%7C0100000051576026537_51576026537%7Ccid%7C110685041%7Cgid%7C5446358361%7Caid%7C16138294055%7Cadp%7Cno%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cmain#app-id=178679&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730038159340-ba92&rtx-reqid=14274565211603330239&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22developer%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_developer%22%2C%22rn%22%3A110160977%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%2214274565211603330239%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fdeveloper%252F38143%253Ffirst-seen%253D%25257B%252522utm_source%252522%25253A%252522yandex%252522%25257D%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">Sandbox game. Explore the world and build cities, villages, palaces in a beautiful cubic style!</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Gear Dash -->
+
+        <div id="contentGD" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonGD" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Gear Dash</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/robo-runner.png"></div>
+                        <div><img class="image-project" src="../images/robo-runner1.png"></div>
+                        <div><img class="image-project" src="../images/robo-runner2.png"></div>
+                        
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/robo-runner.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/robo-runner1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/robo-runner2.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Runner</li>
+                    <li class="info-project">Release date: 07/08/22</li>
+                    <li class="info-project">Restart date: 02/08/24</li>
+                    <li class="info-project">Visits: 3.500+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/350584#app-id=350584&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730135613438-3096&rtx-reqid=13221044327059991289&redir-data=%7B%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fdeveloper%252F42583%2523app%253D350584%22%2C%22rn%22%3A650993754%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">Immerse yourself in the dynamic and exciting world of Gear Dash, where you control a robot racing through a landscape filled with dangerous gears. Your job is to use your quick reactions and agility to dodge deadly obstacles and achieve new records.</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Exsider -->
+
+        <div id="contentEX" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonEX" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Exsider</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/exsider.png"></div>
+                        <div><img class="image-project" src="../images/exsider1.png"></div>
+                        <div><img class="image-project" src="../images/exsider2.png"></div>
+                        
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/exsider.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/exsider1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/exsider2.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Shooter</li>
+                    <li class="info-project">Release date: 05/09/22</li>
+                    <li class="info-project">Restart date: 29/06/24</li>
+                    <li class="info-project">Visits: 1.100+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/350772#app-id=350772&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730135613438-3096&rtx-reqid=13221044327059991289&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22developer%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A4%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_developer%22%2C%22rn%22%3A834030256%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%2213221044327059991289%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fdeveloper%252F42583%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">Immerse yourself in the world of Exsider, where endless action and exciting battles await you! This game offers a unique combination of arcade shooter and stunning visual aesthetics, creating an unparalleled gaming experience.</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Skipit -->
+
+        <div id="contentSI" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonSI" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Skipit</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/skipit.png"></div>
+                        <div><img class="image-project" src="../images/skipit1.png"></div>
+                        <div><img class="image-project" src="../images/skipit2.png"></div>
+                        <div><img class="image-project" src="../images/skipit3.png"></div>
+                        <div><img class="image-project" src="../images/skipit4.png"></div>
+                        
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/skipit.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/skipit1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/skipit2.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="3"><img class="slider-image-mini" src="../images/skipit3.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="4"><img class="slider-image-mini" src="../images/skipit4.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Arcade</li>
+                    <li class="info-project">Release date: 23/11/22</li>
+                    <li class="info-project">Visits: 3.000+</li>
+                    <li class="info-project">Yandex Game: Deleted :(</li>
+                </ul>
+                <p class="about-project">---</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Crystal Magic -->
+
+        <div id="contentCM" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonCM" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Crystal Magic</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/crystalmagic.png"></div>
+                        <div><img class="image-project" src="../images/crystalmagic1.png"></div>
+                        <div><img class="image-project" src="../images/crystalmagic2.png"></div>                     
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/crystalmagic.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/crystalmagic1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/crystalmagic2.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: 3 in a row</li>
+                    <li class="info-project">Release date: 02/08/22</li>
+                    <li class="info-project">Restart date: 28/06/24</li>
+                    <li class="info-project">Visits: 600+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/352848#app-id=352848&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730142108213-a01b&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22developer%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A0%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_developer%22%2C%22rn%22%3A418454074%2C%22row%22%3A1%2C%22rtx_reqid%22%3A%22%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fdeveloper%252F42583%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">Crystal Magic is a 2D match 3 game. You have 30 combos, stack as many combos as possible to get more points.</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Knife Challenge -->
+
+        <div id="contentKC" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonKC" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Knife Challenge</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/knife_challenge.png"></div>
+                        <div><img class="image-project" src="../images/knife_challenge1.png"></div>
+                        <div><img class="image-project" src="../images/knife_challenge2.png"></div>
+                        <div><img class="image-project" src="../images/knife_challenge3.png"></div>
+                        <div><img class="image-project" src="../images/knife_challenge4.png"></div>                     
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/knife_challenge.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/knife_challenge1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/knife_challenge2.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="3"><img class="slider-image-mini" src="../images/knife_challenge3.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="4"><img class="slider-image-mini" src="../images/knife_challenge4.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Arcade</li>
+                    <li class="info-project">Release date: 26/06/24</li>
+                    <li class="info-project">Visits: 2.600+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/359654?utm_campaign=rus_games_brand_yandex_desk_search_exp_all-in-one_460_03.05%7C110685041&utm_medium=search&utm_source=yandex&utm_term=яндекс%20игры%20бесплатно&utm_content=k50id%7C0100000051576026543_51576026543%7Ccid%7C110685041%7Cgid%7C5446358361%7Caid%7C16138294057%7Cadp%7Cno%7Cpos%7Cpremium1%7Csrc%7Csearch_none%7Cdvc%7Cdesktop%7Cmain#app-id=359654&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730216471729-c12d&rtx-reqid=12125932583600409942&pos=%7B%22listType%22%3A%22played%22%2C%22tabCategory%22%3A%22common%22%7D&redir-data=%7B%22block%22%3A%22played%22%2C%22block_index%22%3A0%2C%22card%22%3A%22your_games%22%2C%22col%22%3A6%2C%22first_screen%22%3A1%2C%22page%22%3A%22main%22%2C%22rn%22%3A200081718%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%2212125932583600409942%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22played_games%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252F%253Fk50id%253D0100000051576026543_51576026543%2526yclid%253D10513661752052285439%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">Immerse yourself in the exciting world of Knife Challenge, a beautiful 2D casual game where every knife throw requires extreme precision and concentration from you.</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Cut Fruit -->
+
+        <div id="contentCF" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonCF" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Cut Fruit</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/cutfruit.jpg"></div>
+                        <div><img class="image-project" src="../images/cutfruit1.png"></div>
+                        <div><img class="image-project" src="../images/cutfruit2.png"></div>
+                        <div><img class="image-project" src="../images/cutfruit3.png"></div>                   
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/cutfruit.jpg"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="1"><img class="slider-image-mini" src="../images/cutfruit1.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="2"><img class="slider-image-mini" src="../images/cutfruit2.png"></a>
+                        </div>
+                        <div>
+                            <a data-slide-index="3"><img class="slider-image-mini" src="../images/cutfruit3.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Arcade</li>
+                    <li class="info-project">Release date: 28/06/24</li>
+                    <li class="info-project">Visits: 750+</li>
+                    <li class="info-project">Yandex Game: <a href="https://yandex.ru/games/app/247932#app-id=247932&catalog-session-uid=catalog-59be202a-2980-52fb-9e54-9d5575aee341-1730228994713-a8fc&rtx-reqid=2611222191799274345&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22developer%22%7D&redir-data=%7B%22block%22%3A%22suggested%22%2C%22block_index%22%3A0%2C%22card%22%3A%22adaptive_recommended_new%22%2C%22col%22%3A1%2C%22first_screen%22%3A1%2C%22page%22%3A%22cat_developer%22%2C%22rn%22%3A102464727%2C%22row%22%3A0%2C%22rtx_reqid%22%3A%222611222191799274345%22%2C%22same_block_index%22%3A0%2C%22wrapper%22%3A%22grid-list%22%2C%22http_ref%22%3A%22https%253A%252F%252Fyandex.ru%252Fgames%252Fdeveloper%252F42583%22%7D" style="text-decoration: none; color: #98ff98;">Cliiick</a></li>
+                </ul>
+                <p class="about-project">"Cut Fruit" is a web game based on the game "Fruit Ninja". The player has to cut the fruits, but do not touch the bombs. Collect as many points as possible and beat your records!</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- KolobokAR -->
+
+        <div id="contentKA" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonKA" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">KolobokAR</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/kolobokAR.png"></div>      
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/kolobokAR.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Rofl game</li>
+                    <li class="info-project">Release date: 28/06/24</li>
+                    <li class="info-project">Google Play: Coming Soon...</li>
+                </ul>
+                <p class="about-project">"KolobokAR" is a comic AR application where you can spawn a kolobok and see it in the real world.</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- SkylineNews -->
+
+        <div id="contentSN" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonSN" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Skyline news</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/skylinenewslogo.png"></div>
+                        <div><img class="image-project" src="../images/skylinenews.png"></div>
+                        <div><img class="image-project" src="../images/skylinenews1.png"></div>
+                        <div><img class="image-project" src="../images/skylinenews2.png"></div>
+                        <div><img class="image-project" src="../images/skylinenews3.png"></div>   
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/skylinenewslogo.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="1"><img class="slider-image-mini" src="../images/skylinenews.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="2"><img class="slider-image-mini" src="../images/skylinenews1.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="3"><img class="slider-image-mini" src="../images/skylinenews2.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="4"><img class="slider-image-mini" src="../images/skylinenews3.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Website</li>
+                    <li class="info-project">Release date: 07/09/24</li>
+                    <li class="info-project">Link: Coming Soon...</li>
+                </ul>
+                <p class="about-project">"Skyline news" is my first big site. The news is filled in using parsers. Also on the site there is a change of color themes and adaptation to the phone</p>
+            </div>    
+        </div>
+
+
+
+
+        <!-- Portfiolio -->
+
+        <div id="contentP" class="blur-overlay">
+            <div class="blur-space">
+                <button id="hideButtonP" class="nav-button">Back</button>
+            </div>
+            <div class="blur-without-button">
+                <h1 class="title-project">Portfiolio</h1>
+                <div class="full-slider">
+                    <div class="slider">
+                        <div><img class="image-project" src="../images/Portfoliologo.png"></div>
+                        <div><img class="image-project" src="../images/portfiolio.png"></div>
+                        <div><img class="image-project" src="../images/portfolio1.png"></div>
+                        <div><img class="image-project" src="../images/portfolio2.png"></div>
+                        <div><img class="image-project" src="../images/portfolio3.png"></div>   
+                    </div>
+                    <div class="slider-nav">
+                        <div>
+                            <a class="active" data-slide-index="0"><img class="slider-image-mini" src="../images/Portfoliologo.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="1"><img class="slider-image-mini" src="../images/portfolio.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="2"><img class="slider-image-mini" src="../images/portfolio1.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="3"><img class="slider-image-mini" src="../images/portfolio2.png"></a>
+                        </div>
+                        <div>
+                            <a class="active" data-slide-index="4"><img class="slider-image-mini" src="../images/portfolio3.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="info-project">Genre: Website</li>
+                    <li class="info-project">Release date: 01/11/24</li>
+                    <li class="info-project">Link: Coming Soon...</li>
+                </ul>
+                <p class="about-project">"This is a portfolio that contains information about me, my knowledge and projects. I wrote this site (like everything else) myself from scratch.</p>
+            </div>    
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                pagerCustom: '.slider-nav',
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+            });
+        });
+    </script>
+    <script src="../scripts/filter.js"></script>
+    <script src="../scripts/show_hide.js"></script>
+</body>
+</html>

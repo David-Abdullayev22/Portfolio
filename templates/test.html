@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .animated-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #3498db;
+            opacity: 1;
+            transition: opacity 1s ease, color 1s ease;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+
+        .fade-in {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <span class="animated-text">.py</span>
+    </div>
+
+    <script>
+        const textEffgffglement = document.querySelector('.animated-text');
+        let toggle = true;
+
+        setInterval(() => {
+            textElement.classList.remove('fade-in');  // Убираем класс fade-in, чтобы начать анимацию исчезновения
+            textElement.classList.add('fade-out');    // Добавляем класс исчезновения
+
+            setTimeout(() => {
+                // Меняем текст и цвет, когда текст невидим
+                textElement.textContent = toggle ? '.js' : '.py';
+                textElement.style.color = toggle ? '#e74c3c' : '#3498db';
+                toggle = !toggle;
+
+                // После смены текста запускаем анимацию появления
+                textElement.classList.remove('fade-out');
+                textElement.classList.add('fade-in');
+            }, 1000); // Меняем текст и цвет через 1 секунду, когда текст полностью исчез
+        }, 3000); // Полный цикл смены текста каждые 3 секунды
+    </script>
+</body>
+</html>
