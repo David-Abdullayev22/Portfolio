@@ -258,6 +258,8 @@ aside {
 
     .info-project{
         font-size: 15px;
+        padding: 3px;
+
         
     }
     
@@ -272,14 +274,20 @@ aside {
     
     }
     .slider-image-mini{
-        width: 120px;
-        object-fit: cover;
-    
+        display: none;
     }
     .image-project{
         width: 465px;
         height: auto;
     
+    }
+    
+    .slider-nav{
+        display: none;
+    }
+
+    .full-slider{
+        padding: 10px;
     }
 
 }
@@ -291,6 +299,8 @@ aside {
 
     .info-project{
         font-size: 15px;
+        padding: 3px;
+
         
     }
     
@@ -305,14 +315,20 @@ aside {
     
     }
     .slider-image-mini{
-        width: 120px;
-        object-fit: cover;
+        display: none;
     
     }
     .image-project{
         width: 465px;
         height: auto;
     
+    }
+    .slider-nav{
+        display: none;
+    }
+
+    .full-slider{
+        padding: 10px;
     }
 
 }
