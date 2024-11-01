@@ -94,3 +94,32 @@ footer {
     padding: 15px;
     border-top: 4px solid #68A87B;
 }
+
+@media (min-width: 400px) and (max-width: 899px){
+    .skillsimage{
+        width: 100px;
+    }
+    .unityimage{
+        width: 200px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1499px){
+    .skillsimage{
+        width: 200px;
+    }
+    .unityimage{
+        width: 200px;
+    }
+
+}
+
+@media (min-width: 1500px) and (max-width: 2300px) {
+    .skillsimage{
+        width: 330px;
+    }
+    .unityimage{
+        width: 330px;
+    }
+
+}
