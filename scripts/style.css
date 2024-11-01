@@ -9,7 +9,7 @@
 
 html, body {
     width: 100%;
-    height: auto; /* Позволяет странице расти по мере добавления контента */
+    height: auto; 
     font-family: 'Inter', sans-serif;
     
 }
@@ -27,41 +27,41 @@ header{
 .davdiwhite{
     width: 100px;
     height: 100px;
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0; /* Отступ от верха */
-    left: 0; /* Отступ от левого края */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
 }
 
 .davdiblack{
     width: 500px;
     height: 500px;
-    margin-right: 2200px; /* Отступ между изображением и текстом */
+    margin-right: 2200px; 
     margin-top: -10px;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Выровнять кнопки по правому краю */
-    gap: 15px; /* Расстояние между кнопками */
-    position: absolute; /* Зафиксировать navbar */
-    top: 20px; /* Отступ от верха */
-    right: 30px; /* Отступ от правого края */
+    justify-content: flex-end; 
+    gap: 15px; 
+    position: absolute; 
+    top: 20px; 
+    right: 30px;
 }
 
 .nav-button {
-    background-color: #6E6E6E; /* Серый фон */
-    color: rgb(255, 255, 255); /* Белый текст */
-    border: none; /* Убираем рамку */
-    padding: 20px 25px; /* Внутренние отступы */
-    font-size: 16px; /* Размер текста */
-    border-radius: 10px; /* Закругленные углы */
-    cursor: pointer; /* Курсор указателя */
-    font-weight: bold; /* Жирный текст */
-    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    background-color: #6E6E6E; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 20px 25px; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
 }
 
 .nav-button:hover {
-    background-color: #5a5a5a; /* Темно-серый фон при наведении */
+    background-color: #5a5a5a; 
 }
 
 .header-container {
@@ -69,19 +69,19 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Минимальная высота экрана */
+    min-height: 100vh; 
     background-color: #000000;
     background-image: linear-gradient(33deg, #000000 75%, #85ffbd 99%);
     background-size: cover;
-    background-repeat: no-repeat; /* Отключает повторение */
-    background-position: center center; /* Центрирует изображение */
+    background-repeat: no-repeat; 
+    background-position: center center; 
     text-align: center;
 }
 
 .aboutme-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 45vh;
     background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
@@ -89,21 +89,21 @@ header{
 }
 
 .aboutme-container p {
-    font-size: 60px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 60px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: -800px;
     margin-top: -450px;
 }
 
 .aboutme-container h4 {
-    font-size: 25px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 25px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: -900px;
     margin-top: 10px;
     max-width: 800px;
@@ -113,7 +113,7 @@ header{
 .language-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    justify-content: flex-start;
     align-items: center;
     min-height: 45vh;
     background-image: radial-gradient(at 60.13172562094644% 5.014256493077651%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 68.86528259969462% 91.3947072197759%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 43.63135472064783% 59.16180570062251%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 18.74884461277666% 65.50570238557081%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 84.67057823131172% 96.04218225014316%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 62.98785235236595% 51.052502492917775%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 1.5820989318821255% 49.09080444724621%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 53.325399244324466% 37.96599004958714%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 7.410383816961175% 77.64783456634477%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 98.69692870162426% 95.25321864493554%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 38.381155159044546% 39.72767542092805%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%);
@@ -131,11 +131,11 @@ header{
 }
 
 .language-container h4 {
-    font-size: 25px; /* Размер текста */
-    color: #fdfdfd; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 25px; 
+    color: #fdfdfd; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold;
     margin-left: -900px;
     margin-top: 10px;
     max-width: 800px;
@@ -146,7 +146,7 @@ header{
 .kodland-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 40vh;
     background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
@@ -154,19 +154,19 @@ header{
 }
 
 .kodland-container p {
-    font-size: 60px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 60px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
 }
 
 .kodland-container h4 {
-    font-size: 25px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 25px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: -900px;
     margin-top: 10px;
     max-width: 800px;
@@ -176,7 +176,7 @@ header{
 .pl-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 40vh;
     background-image: radial-gradient(at 60.13172562094644% 5.014256493077651%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 68.86528259969462% 91.3947072197759%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 43.63135472064783% 59.16180570062251%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 18.74884461277666% 65.50570238557081%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 84.67057823131172% 96.04218225014316%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 62.98785235236595% 51.052502492917775%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 1.5820989318821255% 49.09080444724621%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 53.325399244324466% 37.96599004958714%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 7.410383816961175% 77.64783456634477%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%), radial-gradient(at 98.69692870162426% 95.25321864493554%, hsla(0, 0%, 34.90196078431372%, 1) 0%, hsla(0, 0%, 34.90196078431372%, 0) 100%), radial-gradient(at 38.381155159044546% 39.72767542092805%, hsla(0, 0%, 7.0588235294117645%, 1) 0%, hsla(0, 0%, 7.0588235294117645%, 0) 100%);
@@ -185,34 +185,34 @@ header{
 }
 
 .pl-container p {
-    font-size: 60px; /* Размер текста */
-    color: #ffffff; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 60px;
+    color: #ffffff; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
 }
 
 .pl-container h3 {
-    font-size: 35px; /* Размер текста */
-    color: #ffffff; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 35px; 
+    color: #ffffff;
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: -900px;
     max-width: 400px;
-    white-space: nowrap; /* Отключаем перенос текста */
+    white-space: nowrap; 
 }
 
 .pl-container h4 {
-    font-size: 35px; /* Размер текста */
-    color: #ffffff; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 35px;
+    color: #ffffff; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: 900px;
     max-width: 800px;
     margin-top: -65px;
-    white-space: nowrap; /* Отключаем перенос текста */
+    white-space: nowrap; 
 }
 
 
@@ -220,41 +220,41 @@ header{
 .program-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Элементы будут выравнены по верхнему краю */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 40vh;
     background-image: radial-gradient(at 85.74081290426125% 17.593799271772138%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 10.06211380131905% 54.95657656121418%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 8.37971912905424% 33.16576933789468%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%), radial-gradient(at 64.43274732022405% 73.34293823967893%, hsla(0, 0%, 54.90196078431373%, 1) 0%, hsla(0, 0%, 54.90196078431373%, 0) 100%), radial-gradient(at 53.2398727611608% 11.365223252510305%, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 0) 100%);
     text-align: center;
 }
 .program-container p {
-    font-size: 60px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 60px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
 }
 
 .program-container h3 {
-    font-size: 35px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 35px; 
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6;
+    font-weight: bold; 
     margin-left: -900px;
     max-width: 400px;
-    white-space: nowrap; /* Отключаем перенос текста */
+    white-space: nowrap; 
 }
 
 .program-container h4 {
-    font-size: 35px; /* Размер текста */
-    color: #333; /* Цвет текста */
-    margin: 10px 0; /* Отступы сверху и снизу */
-    line-height: 1.6; /* Межстрочный интервал */
-    font-weight: bold; /* Жирность текста */
+    font-size: 35px;
+    color: #333; 
+    margin: 10px 0; 
+    line-height: 1.6; 
+    font-weight: bold; 
     margin-left: 900px;
     max-width: 800px;
     margin-top: -65px;
-    white-space: nowrap; /* Отключаем перенос текста */
+    white-space: nowrap; 
 }
 
 footer {
@@ -313,7 +313,7 @@ footer {
     font-weight: bold;
     color: white;
     position: absolute;
-    top: 10%; /* Задаём расстояние сверху для первого текста */
+    top: 10%; 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -323,13 +323,13 @@ footer {
     font-weight: bold;
     color: white;
     position: absolute;
-    top: 60%; /* Задаём расстояние сверху для второго текста */
+    top: 60%; 
     left: 20%;
     transform: translateX(-50%);
-    width: 300px; /* Фиксированная ширина */
-    white-space: nowrap; /* Отключаем перенос текста */
-    text-align: center; /* Центрируем текст внутри блока */
-    letter-spacing: 5px; /* Расстояние между буквами */
+    width: 300px; 
+    white-space: nowrap; 
+    text-align: center; 
+    letter-spacing: 5px;
 }
 
 .animated-text {
@@ -339,8 +339,8 @@ footer {
     opacity: 1;
     transition: opacity 1s ease, color 1s ease;
     text-align: center;
-    width: 300px; /* Фиксированная ширина */
-    margin: 0 auto; /* Центрирование блока */
+    width: 300px; 
+    margin: 0 auto; 
 }
 
 .fade-out {
@@ -359,24 +359,23 @@ footer {
 
 
 
-/* Настройка для планшетов (768px - 1024px) */
 @media (min-width: 900px) and (max-width: 1499px) {
     .header-container {
-        min-height: 80vh; /* Уменьшаем высоту для планшетов */
-        background-position: center top; /* Подстройка фона */
+        min-height: 80vh; 
+        background-position: center top; 
     }
 
     .aboutme-container h4, .language-container h4, .kodland-container h4, .pl-container h4 {
-        font-size: 20px; /* Уменьшение размера шрифта заголовков */
-        margin-left: -20px; /* Корректируем отступ */
+        font-size: 20px; 
+        margin-left: -20px; 
     }
 
     .aboutme-container p, .language-container p, .kodland-container p {
-        font-size: 40px; /* Уменьшение основного текста */
+        font-size: 40px; 
     }
 
     .navbar {
-        right: 15px; /* Сужаем отступ */
+        right: 15px; 
     }
     .pramayawhite{
         width: 1000px
@@ -387,13 +386,13 @@ footer {
         font-weight: bold;
         color: white;
         position: absolute;
-        top: 40%; /* Задаём расстояние сверху для второго текста */
+        top: 40%; 
         left: 27%;
         transform: translateX(-50%);
-        width: 300px; /* Фиксированная ширина */
-        white-space: nowrap; /* Отключаем перенос текста */
-        text-align: center; /* Центрируем текст внутри блока */
-        letter-spacing: 5px; /* Расстояние между буквами */
+        width: 300px; 
+        white-space: nowrap; 
+        text-align: center;
+        letter-spacing: 5px; 
     }
 
     .animated-text {
@@ -403,12 +402,12 @@ footer {
     .main-heading {
         font-size: 200px;
         position: absolute;
-        top: 10%; /* Задаём расстояние сверху для первого текста */
+        top: 10%; 
         left: 50%;
     }
 
     .header-container {
-        min-height: 70vh; /* Минимальная высота экрана */
+        min-height: 70vh; 
     }
 
     .aboutme-container p {
@@ -418,7 +417,7 @@ footer {
     .davdiblack{
         width: 500px;
         height: 500px;
-        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-right: 900px; 
         margin-top: -10px;
     }
     .aboutme-container h4 {
@@ -428,27 +427,27 @@ footer {
     }
 
     .pl-container h3 {
-        font-size: 25px; /* Размер текста */
+        font-size: 25px; 
         margin-left: -500px;
     }
     
     .pl-container h4 {
-        font-size: 25px; /* Размер текста */
-        color: #ffffff; /* Цвет текста */
-        margin: 10px 0; /* Отступы сверху и снизу */
+        font-size: 25px; 
+        color: #ffffff; 
+        margin: 10px 0; 
         margin-left: 600px;
         max-width: 800px;
         margin-top: -48px;
     }
 
     .program-container h3 {
-        font-size: 25px; /* Размер текста */
-        font-weight: bold; /* Жирность текста */
+        font-size: 25px; 
+        font-weight: bold; 
         margin-left: -500px;
     }
 
     .program-container h4 {
-        font-size: 23px; /* Размер текста */
+        font-size: 23px; 
         margin-left: 680px;
         margin-top: -48px;
     }
@@ -463,24 +462,23 @@ footer {
 
 
 
-/* Настройка для планшетов (768px - 1024px) */
 @media (min-width: 1500px) and (max-width: 2300px) {
     .header-container {
-        min-height: 80vh; /* Уменьшаем высоту для планшетов */
-        background-position: center top; /* Подстройка фона */
+        min-height: 80vh; 
+        background-position: center top; 
     }
 
     .aboutme-container h4, .language-container h4, .kodland-container h4, .pl-container h4 {
-        font-size: 20px; /* Уменьшение размера шрифта заголовков */
-        margin-left: -20px; /* Корректируем отступ */
+        font-size: 20px; 
+        margin-left: -20px; 
     }
 
     .aboutme-container p, .language-container p, .kodland-container p {
-        font-size: 40px; /* Уменьшение основного текста */
+        font-size: 40px; 
     }
 
     .navbar {
-        right: 15px; /* Сужаем отступ */
+        right: 15px; 
     }
     .pramayawhite{
         width: 1000px
@@ -491,13 +489,13 @@ footer {
         font-weight: bold;
         color: white;
         position: absolute;
-        top: 40%; /* Задаём расстояние сверху для второго текста */
+        top: 40%; 
         left: 27%;
         transform: translateX(-50%);
-        width: 300px; /* Фиксированная ширина */
-        white-space: nowrap; /* Отключаем перенос текста */
-        text-align: center; /* Центрируем текст внутри блока */
-        letter-spacing: 5px; /* Расстояние между буквами */
+        width: 300px; 
+        white-space: nowrap; 
+        text-align: center; 
+        letter-spacing: 5px; 
     }
 
     .animated-text {
@@ -507,12 +505,12 @@ footer {
     .main-heading {
         font-size: 200px;
         position: absolute;
-        top: 10%; /* Задаём расстояние сверху для первого текста */
+        top: 10%; 
         left: 50%;
     }
 
     .header-container {
-        min-height: 70vh; /* Минимальная высота экрана */
+        min-height: 70vh; 
     }
 
     .aboutme-container p {
@@ -522,7 +520,7 @@ footer {
     .davdiblack{
         width: 500px;
         height: 500px;
-        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-right: 900px; 
         margin-top: -10px;
     }
     .aboutme-container h4 {
@@ -532,27 +530,27 @@ footer {
     }
 
     .pl-container h3 {
-        font-size: 25px; /* Размер текста */
+        font-size: 25px; 
         margin-left: -500px;
     }
     
     .pl-container h4 {
-        font-size: 25px; /* Размер текста */
-        color: #ffffff; /* Цвет текста */
-        margin: 10px 0; /* Отступы сверху и снизу */
+        font-size: 25px; 
+        color: #ffffff; 
+        margin: 10px 0; 
         margin-left: 600px;
         max-width: 800px;
         margin-top: -48px;
     }
 
     .program-container h3 {
-        font-size: 25px; /* Размер текста */
-        font-weight: bold; /* Жирность текста */
+        font-size: 25px; 
+        font-weight: bold; 
         margin-left: -500px;
     }
 
     .program-container h4 {
-        font-size: 23px; /* Размер текста */
+        font-size: 23px; 
         margin-left: 680px;
         margin-top: -48px;
     }
@@ -562,7 +560,7 @@ footer {
     .davdiblack{
         width: 350px;
         height: 350px;
-        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-right: 900px; 
     }
     .aboutme-container p {
         margin-left: 200px;
