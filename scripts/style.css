@@ -11,6 +11,7 @@ html, body {
     width: 100%;
     height: auto; /* Позволяет странице расти по мере добавления контента */
     font-family: 'Inter', sans-serif;
+    
 }
 
 header{
@@ -22,8 +23,6 @@ header{
     position: relative;
     
 }
-
-
 
 .davdiwhite{
     width: 100px;
@@ -74,6 +73,8 @@ header{
     background-color: #000000;
     background-image: linear-gradient(33deg, #000000 75%, #85ffbd 99%);
     background-size: cover;
+    background-repeat: no-repeat; /* Отключает повторение */
+    background-position: center center; /* Центрирует изображение */
     text-align: center;
 }
 
@@ -349,4 +350,223 @@ footer {
 .fade-in {
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+/* Настройка для планшетов (768px - 1024px) */
+@media (min-width: 900px) and (max-width: 1499px) {
+    .header-container {
+        min-height: 80vh; /* Уменьшаем высоту для планшетов */
+        background-position: center top; /* Подстройка фона */
+    }
+
+    .aboutme-container h4, .language-container h4, .kodland-container h4, .pl-container h4 {
+        font-size: 20px; /* Уменьшение размера шрифта заголовков */
+        margin-left: -20px; /* Корректируем отступ */
+    }
+
+    .aboutme-container p, .language-container p, .kodland-container p {
+        font-size: 40px; /* Уменьшение основного текста */
+    }
+
+    .navbar {
+        right: 15px; /* Сужаем отступ */
+    }
+    .pramayawhite{
+        width: 1000px
+    }
+
+    .sub-heading {
+        font-size: 90px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 40%; /* Задаём расстояние сверху для второго текста */
+        left: 27%;
+        transform: translateX(-50%);
+        width: 300px; /* Фиксированная ширина */
+        white-space: nowrap; /* Отключаем перенос текста */
+        text-align: center; /* Центрируем текст внутри блока */
+        letter-spacing: 5px; /* Расстояние между буквами */
+    }
+
+    .animated-text {
+        font-size: 90px;
+    }
+
+    .main-heading {
+        font-size: 200px;
+        position: absolute;
+        top: 10%; /* Задаём расстояние сверху для первого текста */
+        left: 50%;
+    }
+
+    .header-container {
+        min-height: 70vh; /* Минимальная высота экрана */
+    }
+
+    .aboutme-container p {
+        margin-left: 100px;
+    }
+
+    .davdiblack{
+        width: 500px;
+        height: 500px;
+        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-top: -10px;
+    }
+    .aboutme-container h4 {
+        margin-left: 200px;
+        margin-top: 50px;
+        max-width: 800px;
+    }
+
+    .pl-container h3 {
+        font-size: 25px; /* Размер текста */
+        margin-left: -500px;
+    }
+    
+    .pl-container h4 {
+        font-size: 25px; /* Размер текста */
+        color: #ffffff; /* Цвет текста */
+        margin: 10px 0; /* Отступы сверху и снизу */
+        margin-left: 600px;
+        max-width: 800px;
+        margin-top: -48px;
+    }
+
+    .program-container h3 {
+        font-size: 25px; /* Размер текста */
+        font-weight: bold; /* Жирность текста */
+        margin-left: -500px;
+    }
+
+    .program-container h4 {
+        font-size: 23px; /* Размер текста */
+        margin-left: 680px;
+        margin-top: -48px;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+/* Настройка для планшетов (768px - 1024px) */
+@media (min-width: 1500px) and (max-width: 2300px) {
+    .header-container {
+        min-height: 80vh; /* Уменьшаем высоту для планшетов */
+        background-position: center top; /* Подстройка фона */
+    }
+
+    .aboutme-container h4, .language-container h4, .kodland-container h4, .pl-container h4 {
+        font-size: 20px; /* Уменьшение размера шрифта заголовков */
+        margin-left: -20px; /* Корректируем отступ */
+    }
+
+    .aboutme-container p, .language-container p, .kodland-container p {
+        font-size: 40px; /* Уменьшение основного текста */
+    }
+
+    .navbar {
+        right: 15px; /* Сужаем отступ */
+    }
+    .pramayawhite{
+        width: 1000px
+    }
+
+    .sub-heading {
+        font-size: 120px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 40%; /* Задаём расстояние сверху для второго текста */
+        left: 27%;
+        transform: translateX(-50%);
+        width: 300px; /* Фиксированная ширина */
+        white-space: nowrap; /* Отключаем перенос текста */
+        text-align: center; /* Центрируем текст внутри блока */
+        letter-spacing: 5px; /* Расстояние между буквами */
+    }
+
+    .animated-text {
+        font-size: 100px;
+    }
+
+    .main-heading {
+        font-size: 200px;
+        position: absolute;
+        top: 10%; /* Задаём расстояние сверху для первого текста */
+        left: 50%;
+    }
+
+    .header-container {
+        min-height: 70vh; /* Минимальная высота экрана */
+    }
+
+    .aboutme-container p {
+        margin-left: 100px;
+    }
+
+    .davdiblack{
+        width: 500px;
+        height: 500px;
+        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-top: -10px;
+    }
+    .aboutme-container h4 {
+        margin-left: 200px;
+        margin-top: 50px;
+        max-width: 800px;
+    }
+
+    .pl-container h3 {
+        font-size: 25px; /* Размер текста */
+        margin-left: -500px;
+    }
+    
+    .pl-container h4 {
+        font-size: 25px; /* Размер текста */
+        color: #ffffff; /* Цвет текста */
+        margin: 10px 0; /* Отступы сверху и снизу */
+        margin-left: 600px;
+        max-width: 800px;
+        margin-top: -48px;
+    }
+
+    .program-container h3 {
+        font-size: 25px; /* Размер текста */
+        font-weight: bold; /* Жирность текста */
+        margin-left: -500px;
+    }
+
+    .program-container h4 {
+        font-size: 23px; /* Размер текста */
+        margin-left: 680px;
+        margin-top: -48px;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
 
