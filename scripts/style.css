@@ -556,9 +556,20 @@ footer {
         margin-left: 680px;
         margin-top: -48px;
     }
+}
 
-    
-    
+@media (min-height: 400px) and (max-height: 1200px){
+    .davdiblack{
+        width: 500px;
+        height: 500px;
+        margin-right: 900px; /* Отступ между изображением и текстом */
+        margin-top: -100px;
+    }
+    .aboutme-container p {
+        margin-left: 100px;
+        margin-top: -350px;
+    }
+
 }
 
 
