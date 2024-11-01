@@ -68,6 +68,24 @@ const contentP = document.getElementById("contentP");
 const showButtonP = document.getElementById("showButtonP"); // Кнопка для показа
 const hideButtonP = document.getElementById("hideButtonP"); // Кнопка для скрытия
 
+//Skyline News
+showButtonSN.addEventListener("click", () => {
+    contentSN.classList.add("active");
+    initializeSlider(); // Повторная инициализация или перезагрузка
+});
+hideButtonSN.addEventListener("click", () => {
+    contentSN.classList.remove("active");
+});
+
+//Portfolio
+showButtonP.addEventListener("click", () => {
+    contentP.classList.add("active");
+    initializeSlider(); // Повторная инициализация или перезагрузка
+});
+hideButtonP.addEventListener("click", () => {
+    contentP.classList.remove("active");
+});
+
 //City Runner
 showButton.addEventListener("click", () => {
     content.classList.add("active");
@@ -147,22 +165,4 @@ showButtonKA.addEventListener("click", () => {
 });
 hideButtonKA.addEventListener("click", () => {
     contentKA.classList.remove("active");
-});
-
-//Skyline News
-showButtonSN.addEventListener("click", () => {
-    contentSN.classList.add("active");
-    initializeSlider(); // Повторная инициализация или перезагрузка
-});
-hideButtonSN.addEventListener("click", () => {
-    contentSN.classList.remove("active");
-});
-
-//Portfolio
-showButtonP.addEventListener("click", () => {
-    contentP.classList.add("active");
-    initializeSlider(); // Повторная инициализация или перезагрузка
-});
-hideButtonP.addEventListener("click", () => {
-    contentP.classList.remove("active");
 });
