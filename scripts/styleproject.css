@@ -251,21 +251,21 @@ aside {
     margin-left: 1200px;
 }
 
-@media (min-height: 400px) and (max-height: 1200px){
+@media (min-width: 900px) and (max-width: 1499px){
     .title-project{
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .info-project{
-        font-size: 20px;
+        font-size: 15px;
         
     }
     
     .about-project{
-        font-size: 17px;
+        font-size: 14px;
     }
     .bx-wrapper {
-        width: 575px;
+        width: 475px;
         display: flex;
         justify-content: center;
         align-items: center; 
@@ -274,6 +274,44 @@ aside {
     .slider-image-mini{
         width: 120px;
         object-fit: cover;
+    
+    }
+    .image-project{
+        width: 465px;
+        height: auto;
+    
+    }
+
+}
+
+@media (min-height: 400px) and (max-height: 1200px){
+    .title-project{
+        font-size: 60px;
+    }
+
+    .info-project{
+        font-size: 15px;
+        
+    }
+    
+    .about-project{
+        font-size: 14px;
+    }
+    .bx-wrapper {
+        width: 475px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    
+    }
+    .slider-image-mini{
+        width: 120px;
+        object-fit: cover;
+    
+    }
+    .image-project{
+        width: 465px;
+        height: auto;
     
     }
 
