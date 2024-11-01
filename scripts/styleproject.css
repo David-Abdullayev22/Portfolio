@@ -44,7 +44,7 @@ header h1 {
 }
 
 .main-layout {
-    display: flex; /* Flexbox для размещения aside и контента */
+    display: flex; 
     flex-grow: 1;
 }
 
@@ -57,14 +57,14 @@ aside {
 
 .content {
     width: 100%;
-    padding: 0; /* Убираем отступы */
+    padding: 0; 
 }
 
 .item-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Чтобы текст и кнопка растягивались */
-    width: 100%; /* Растягивает элемент на всю ширину родителя */
+    justify-content: space-between; 
+    width: 100%; 
     border: 1px solid #ddd;
     padding: 15px;
     background-color: #383838;
@@ -144,21 +144,21 @@ aside {
 
 .blur-space{
     display: flex;
-    justify-content: flex-end; /* Выровнять кнопки по правому краю */
-    gap: 15px; /* Расстояние между кнопками */
-    position: absolute; /* Зафиксировать navbar */
-    top: 20px; /* Отступ от верха */
-    right: 30px; /* Отступ от правого края */
+    justify-content: flex-end; 
+    gap: 15px; 
+    position: absolute; 
+    top: 20px; 
+    right: 30px; 
 }
 .blur-overlay {
-    position: fixed;       /* Закрепляем на экране */
+    position: fixed;       
     top: 0;
     left: 0;
-    width: 100vw;          /* Покрывает всю ширину экрана */
-    height: 100vh;         /* Покрывает всю высоту экрана */
-    background: rgba(61, 61, 61, 0.5); /* Полупрозрачный белый фон */
-    backdrop-filter: blur(10px); /* Размытие фона */
-    z-index: 9999;         /* Выше всех элементов */
+    width: 100vw;          
+    height: 100vh;         
+    background: rgba(61, 61, 61, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: 9999;         
 
     opacity: 0;
     visibility: hidden;
@@ -166,23 +166,23 @@ aside {
 }
 
 .blur-overlay.active {
-    position: fixed;       /* Закрепляем на экране */
+    position: fixed;       
     top: 0;
     left: 0;
-    width: 100vw;          /* Покрывает всю ширину экрана */
-    height: 100vh;         /* Покрывает всю высоту экрана */
-    background: rgba(61, 61, 61, 0.5); /* Полупрозрачный белый фон */
-    backdrop-filter: blur(10px); /* Размытие фона */
-    z-index: 9999;         /* Выше всех элементов */
+    width: 100vw;          
+    height: 100vh;         
+    background: rgba(61, 61, 61, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: 9999;         
     opacity: 1;
     visibility: visible;
 }
 
 .blur-without-button{
     display: flex;
-    justify-content: center; /* Горизонтальное центрирование */
-    align-items: center; /* Вертикальное центрирование */
-    height: 100vh; /* Полная высота экрана для примера */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
     flex-direction: column;
 }
 
@@ -210,15 +210,15 @@ aside {
 
 
 .button-project{
-    background-color: #6E6E6E; /* Серый фон */
-    color: rgb(255, 255, 255); /* Белый текст */
-    border: none; /* Убираем рамку */
-    padding: 20px 25px; /* Внутренние отступы */
-    font-size: 16px; /* Размер текста */
-    border-radius: 10px; /* Закругленные углы */
-    cursor: pointer; /* Курсор указателя */
-    font-weight: bold; /* Жирный текст */
-    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    background-color: #6E6E6E; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 20px 25px; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
 }
 
 .full-slider{
@@ -247,13 +247,13 @@ aside {
 .title-blur{
     font-size: 150px;
     position: absolute;
-    top: 0; /* Поднимает текст к верхнему краю контейнера */
+    top: 0; 
     margin-left: 1200px;
 }
 
 @media (min-height: 400px) and (max-height: 1200px){
     .title-project{
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .info-project{
@@ -262,7 +262,19 @@ aside {
     }
     
     .about-project{
-        font-size: 20px;
+        font-size: 17px;
+    }
+    .bx-wrapper {
+        width: 575px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    
+    }
+    .slider-image-mini{
+        width: 120px;
+        object-fit: cover;
+    
     }
 
 }
