@@ -6,16 +6,16 @@
 
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #2C2C2C; /* Тёмно-серый фон */
-    color: #E0E0E0; /* Светлый текст */
+    background-color: #2C2C2C; 
+    color: #E0E0E0; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #2C2C2C; /* Нежно-зелёный фон хедера */
-    color: #cbcbcb; /* Тёмно-зелёный текст */
+    background-color: #2C2C2C; 
+    color: #cbcbcb; 
     padding: 25px;
     text-align: center;
     border-bottom: 4px solid #68A87B;
@@ -36,25 +36,25 @@ main {
 }
 
 .nav-button {
-    background-color: #6E6E6E; /* Серый фон */
-    color: rgb(255, 255, 255); /* Белый текст */
-    border: none; /* Убираем рамку */
-    padding: 20px 25px; /* Внутренние отступы */
-    font-size: 16px; /* Размер текста */
-    border-radius: 10px; /* Закругленные углы */
-    cursor: pointer; /* Курсор указателя */
-    font-weight: bold; /* Жирный текст */
-    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    background-color: #6E6E6E; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 20px 25px; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
 }
 
 .nav-button:hover {
-    background-color: #5a5a5a; /* Темно-серый фон при наведении */
+    background-color: #5a5a5a; 
 }
 
 .ad-container {
-    background-color: #383838; /* Тёмно-серый контейнер */
+    background-color: #383838; 
     padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2); /* Лёгкая зеленоватая тень */
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2); 
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -62,19 +62,19 @@ main {
 
 .ad-container:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 18px rgba(0, 255, 136, 0.3); /* Плавная зелёная тень при наведении */
+    box-shadow: 0 6px 18px rgba(0, 255, 136, 0.3); 
 }
 
 .ad-container h3 {
     margin-bottom: 12px;
-    color: #A2D9A6; /* Светло-зелёный заголовок */
+    color: #A2D9A6; 
     font-size: 1.6rem;
     border-bottom: 1px solid #68A87B;
     padding-bottom: 8px;
 }
 
 .ad-container p {
-    color: #CFCFCF; /* Светло-серый текст описания */
+    color: #CFCFCF; 
     font-size: 1.1rem;
     line-height: 1.7;
 }
@@ -88,8 +88,8 @@ main {
 }
 
 footer {
-    background-color: #2C2C2C; /* Нежный зелёный фон футера */
-    color: #f7f7f7; /* Тёмно-зелёный текст футера */
+    background-color: #2C2C2C; 
+    color: #f7f7f7; 
     text-align: center;
     padding: 15px;
     border-top: 4px solid #68A87B;
