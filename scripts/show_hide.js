@@ -1,87 +1,101 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let slider; // Переменная для хранения ссылки на слайдер
+    let slider; 
 
-    // Функция для инициализации bxSlider
     function initializeSlider() {
-        if (!slider) { // Инициализируем только один раз
+        if (!slider) { 
             slider = $('.slider').bxSlider({
                 pagerCustom: '.slider-nav',
                 infiniteLoop: false,
                 hideControlOnEnd: true,
             });
         } else {
-            slider.reloadSlider(); // Перезагружаем слайдер
+            slider.reloadSlider(); 
         }
     }
 
     //City Runner
     const content = document.getElementById("content");
-    const showButton = document.getElementById("showButton"); // Кнопка для показа
-    const hideButton = document.getElementById("hideButton"); // Кнопка для скрытия
+    const showButton = document.getElementById("showButton"); 
+    const hideButton = document.getElementById("hideButton"); 
 
     //Build and Explore
     const contentBaE = document.getElementById("contentBaE");
-    const showButtonBaE = document.getElementById("showButtonBaE"); // Кнопка для показа
-    const hideButtonBaE = document.getElementById("hideButtonBaE"); // Кнопка для скрытия
+    const showButtonBaE = document.getElementById("showButtonBaE"); 
+    const hideButtonBaE = document.getElementById("hideButtonBaE"); 
 
     //Gear Dash
     const contentGD = document.getElementById("contentGD");
-    const showButtonGD = document.getElementById("showButtonGD"); // Кнопка для показа
-    const hideButtonGD = document.getElementById("hideButtonGD"); // Кнопка для скрытия
+    const showButtonGD = document.getElementById("showButtonGD"); 
+    const hideButtonGD = document.getElementById("hideButtonGD"); 
 
     //Gear Dash
     const contentEX = document.getElementById("contentEX");
-    const showButtonEX = document.getElementById("showButtonEX"); // Кнопка для показа
-    const hideButtonEX = document.getElementById("hideButtonEX"); // Кнопка для скрытия
+    const showButtonEX = document.getElementById("showButtonEX"); 
+    const hideButtonEX = document.getElementById("hideButtonEX"); 
 
     //Skipit
     const contentSI = document.getElementById("contentSI");
-    const showButtonSI = document.getElementById("showButtonSI"); // Кнопка для показа
-    const hideButtonSI = document.getElementById("hideButtonSI"); // Кнопка для скрытия
+    const showButtonSI = document.getElementById("showButtonSI"); 
+    const hideButtonSI = document.getElementById("hideButtonSI"); 
 
     //Crystal Magic
     const contentCM = document.getElementById("contentCM");
-    const showButtonCM = document.getElementById("showButtonCM"); // Кнопка для показа
-    const hideButtonCM = document.getElementById("hideButtonCM"); // Кнопка для скрытия
+    const showButtonCM = document.getElementById("showButtonCM"); 
+    const hideButtonCM = document.getElementById("hideButtonCM"); 
 
     //Knife Challenge
     const contentKC = document.getElementById("contentKC");
-    const showButtonKC = document.getElementById("showButtonKC"); // Кнопка для показа
-    const hideButtonKC = document.getElementById("hideButtonKC"); // Кнопка для скрытия
+    const showButtonKC = document.getElementById("showButtonKC"); 
+    const hideButtonKC = document.getElementById("hideButtonKC"); 
 
     //Cut Fruit
     const contentCF = document.getElementById("contentCF");
-    const showButtonCF = document.getElementById("showButtonCF"); // Кнопка для показа
-    const hideButtonCF = document.getElementById("hideButtonCF"); // Кнопка для скрытия
+    const showButtonCF = document.getElementById("showButtonCF");
+    const hideButtonCF = document.getElementById("hideButtonCF"); 
 
     //KolobokAR
     const contentKA = document.getElementById("contentKA");
-    const showButtonKA = document.getElementById("showButtonKA"); // Кнопка для показа
-    const hideButtonKA = document.getElementById("hideButtonKA"); // Кнопка для скрытия
+    const showButtonKA = document.getElementById("showButtonKA"); 
+    const hideButtonKA = document.getElementById("hideButtonKA"); 
 
     //Skyline News
     const contentSN = document.getElementById("contentSN");
-    const showButtonSN = document.getElementById("showButtonSN"); // Кнопка для показа
-    const hideButtonSN = document.getElementById("hideButtonSN"); // Кнопка для скрытия
+    const showButtonSN = document.getElementById("showButtonSN"); 
+    const hideButtonSN = document.getElementById("hideButtonSN"); 
 
     //Portfolio
     const contentP = document.getElementById("contentP");
-    const showButtonP = document.getElementById("showButtonP"); // Кнопка для показа
-    const hideButtonP = document.getElementById("hideButtonP"); // Кнопка для скрытия
+    const showButtonP = document.getElementById("showButtonP"); 
+    const hideButtonP = document.getElementById("hideButtonP");
+
+    //BrevigoAI
+    const contentBAI = document.getElementById("contentBAI");
+    const showButtonBAI = document.getElementById("showButtonBAI"); 
+    const hideButtonBAI = document.getElementById("hideButtonBAI"); 
+
 
     //Skyline News
     showButtonSN.addEventListener("click", () => {
         contentSN.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonSN.addEventListener("click", () => {
         contentSN.classList.remove("active");
     });
 
+    //Brevigo AI
+    showButtonBAI.addEventListener("click", () => {
+        contentBAI.classList.add("active");
+        initializeSlider(); 
+    });
+    hideButtonBAI.addEventListener("click", () => {
+        contentBAI.classList.remove("active");
+    });
+
     //Portfolio
     showButtonP.addEventListener("click", () => {
         contentP.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider();
     });
     hideButtonP.addEventListener("click", () => {
         contentP.classList.remove("active");
@@ -90,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //City Runner
     showButton.addEventListener("click", () => {
         content.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButton.addEventListener("click", () => {
         content.classList.remove("active");
@@ -99,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Build and Explore
     showButtonBaE.addEventListener("click", () => {
         contentBaE.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonBaE.addEventListener("click", () => {
         contentBaE.classList.remove("active");
@@ -108,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //GearDash
     showButtonGD.addEventListener("click", () => {
         contentGD.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider();
     });
     hideButtonGD.addEventListener("click", () => {
         contentGD.classList.remove("active");
@@ -117,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Exsider
     showButtonEX.addEventListener("click", () => {
         contentEX.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonEX.addEventListener("click", () => {
         contentEX.classList.remove("active");
@@ -126,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Skipit
     showButtonSI.addEventListener("click", () => {
         contentSI.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonSI.addEventListener("click", () => {
         contentSI.classList.remove("active");
@@ -135,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Crystal Magic
     showButtonCM.addEventListener("click", () => {
         contentCM.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonCM.addEventListener("click", () => {
         contentCM.classList.remove("active");
@@ -144,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Knife Challenge
     showButtonKC.addEventListener("click", () => {
         contentKC.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider();
     });
     hideButtonKC.addEventListener("click", () => {
         contentKC.classList.remove("active");
@@ -153,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Cut Fruit
     showButtonCF.addEventListener("click", () => {
         contentCF.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonCF.addEventListener("click", () => {
         contentCF.classList.remove("active");
@@ -162,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //KolobokAR
     showButtonKA.addEventListener("click", () => {
         contentKA.classList.add("active");
-        initializeSlider(); // Повторная инициализация или перезагрузка
+        initializeSlider(); 
     });
     hideButtonKA.addEventListener("click", () => {
         contentKA.classList.remove("active");
