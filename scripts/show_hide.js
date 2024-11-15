@@ -2,19 +2,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let slider;
 
     function initializeSlider() {
+        console.log("bxSlider:", $.fn.bxSlider);
+        console.log("Элементы с классом 'slider':", $('.slider').length);
+    
         if (typeof $.fn.bxSlider === "function") {
-            if ($('.slider').length === 0) {
-                console.error("Элемент с классом 'slider' не найден.");
-                return;
+            if (!slider) {
+                console.log("Создаём новый слайдер.");
+                slider = $('.slider').bxSlider({
+                    pagerCustom: '.slider-nav',
+                    infiniteLoop: false,
+                    hideControlOnEnd: true,
+                });
+            } else {
+                console.log("Переинициализация слайдера.");
+                if (typeof slider.reloadSlider === "function") {
+                    slider.reloadSlider();
+                } else {
+                    console.error("Метод reloadSlider отсутствует. Создаём слайдер заново.");
+                    slider = $('.slider').bxSlider({
+                        pagerCustom: '.slider-nav',
+                        infiniteLoop: false,
+                        hideControlOnEnd: true,
+                    });
+                }
             }
-            if (slider) {
-                slider.destroySlider && slider.destroySlider(); // Уничтожение слайдера, если доступно
-            }
-            slider = $('.slider').bxSlider({
-                pagerCustom: '.slider-nav',
-                infiniteLoop: false,
-                hideControlOnEnd: true,
-            });
         } else {
             console.error("bxSlider не подключен.");
         }
