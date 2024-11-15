@@ -3,17 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function initializeSlider() {
         if (typeof $.fn.bxSlider === "function") {
-            if (!slider) {
-                slider = $('.slider').bxSlider({
-                    pagerCustom: '.slider-nav',
-                    infiniteLoop: false,
-                    hideControlOnEnd: true,
-                });
-            } else if (slider.reloadSlider) {
-                slider.reloadSlider();
-            } else {
-                console.error("Метод reloadSlider не найден.");
+            if ($('.slider').length === 0) {
+                console.error("Элемент с классом 'slider' не найден.");
+                return;
             }
+            if (slider) {
+                slider.destroySlider && slider.destroySlider(); // Уничтожение слайдера, если доступно
+            }
+            slider = $('.slider').bxSlider({
+                pagerCustom: '.slider-nav',
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+            });
         } else {
             console.error("bxSlider не подключен.");
         }
