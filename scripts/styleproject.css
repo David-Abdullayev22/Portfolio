@@ -187,18 +187,18 @@ aside {
 }
 
 .title-project{
-    font-size: 150px;
+    font-size: 100px;
 }
 
 .info-project{
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
 }
 
 .about-project{
     font-size: 25px;
     color: #bababa;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .image-project{
@@ -222,7 +222,7 @@ aside {
 }
 
 .full-slider{
-    padding: 40px;
+    padding: 20px;
 }
 .bx-wrapper {
     width: 775px;
@@ -259,13 +259,12 @@ aside {
     .info-project{
         font-size: 15px;
         padding: 3px;
-
-        
     }
     
     .about-project{
         font-size: 14px;
     }
+
     .bx-wrapper {
         width: 475px;
         display: flex;
@@ -273,9 +272,11 @@ aside {
         align-items: center; 
     
     }
+
     .slider-image-mini{
         display: none;
     }
+
     .image-project{
         width: 465px;
         height: auto;
@@ -300,29 +301,28 @@ aside {
     .info-project{
         font-size: 15px;
         padding: 3px;
-
-        
     }
     
     .about-project{
         font-size: 14px;
     }
+
     .bx-wrapper {
         width: 475px;
         display: flex;
         justify-content: center;
         align-items: center; 
-    
     }
+
     .slider-image-mini{
         display: none;
-    
     }
+
     .image-project{
         width: 465px;
         height: auto;
-    
     }
+
     .slider-nav{
         display: none;
     }
