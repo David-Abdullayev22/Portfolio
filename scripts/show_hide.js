@@ -61,7 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { content: document.getElementById("contentCM"), showButton: document.getElementById("showButtonCM"), hideButton: document.getElementById("hideButtonCM") },
         { content: document.getElementById("contentKC"), showButton: document.getElementById("showButtonKC"), hideButton: document.getElementById("hideButtonKC") },
         { content: document.getElementById("contentCF"), showButton: document.getElementById("showButtonCF"), hideButton: document.getElementById("hideButtonCF") },
-        { content: document.getElementById("contentKA"), showButton: document.getElementById("showButtonKA"), hideButton: document.getElementById("hideButtonKA") }
+        { content: document.getElementById("contentKA"), showButton: document.getElementById("showButtonKA"), hideButton: document.getElementById("hideButtonKA") },
+        { content: document.getElementById("contentFYO"), showButton: document.getElementById("showButtonFYO"), hideButton: document.getElementById("hideButtonFYO") }
     ];
 
     sections.filter(section => section.content && section.showButton && section.hideButton)
